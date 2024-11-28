@@ -237,6 +237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paramater:
+    MAX_HP: 2
+    HP: 0
+    speedCoff: 1
+    canBodyExplode: 0
     BlockOffset: 2
     partolSpeed: 0
     chaseSpeed: 0
@@ -359,7 +363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ef8e23427b24064db7142b928a6627d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineColor: {r: 0, g: 0, b: 0, a: 0}
   fsm: {fileID: 1215739160518021176}
+  _hasTimeCrack: 0
+  _hasShield: 0
+  _hasFlashSpeed: 0
+  _hasBodyExplosion: 0
+  _hasGhostMode: 0
 --- !u!1 &8960743040693985867
 GameObject:
   m_ObjectHideFlags: 0

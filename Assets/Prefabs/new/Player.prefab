@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 5304436658869608765}
   - component: {fileID: 3130077756361011478}
   - component: {fileID: 1147108621}
+  - component: {fileID: 1394225755865228479}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -486,6 +487,23 @@ MonoBehaviour:
   shadowColor: {r: 0, g: 0.03529412, b: 1, a: 0.3137255}
   windMaterial: {fileID: 2100000, guid: d7c7651f1b81209458dc4c91dc99f988, type: 2}
   windedPaticleGO: {fileID: 1835158562807925651, guid: 0bcf45fa86c37e44591f4135b8748ca2, type: 3}
+--- !u!114 &1394225755865228479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530007953462262469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355addd9f9aca364d9c23f3fceeebf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGenerating: 0
+  maxShadowCacheCount: 15
+  shadowColor: {r: 4, g: 0.15424448, b: 0, a: 0.3137255}
+  shadowMaterial: {fileID: 2100000, guid: 03b3eb5e80df798419665f114f929e53, type: 2}
+  record_interval: 0.08
 --- !u!1 &3130077756706392534
 GameObject:
   m_ObjectHideFlags: 0

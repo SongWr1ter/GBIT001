@@ -5212,19 +5212,19 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 16, g: 0, b: 0, a: 1}
+        key1: {r: 3.418182, g: 4, b: 0, a: 1}
+        key2: {r: 0, g: 4, b: 0.5591402, a: 0}
+        key3: {r: 0, g: 0.5, b: 4, a: 0}
+        key4: {r: 16, g: 0, b: 14.981033, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
-        ctime4: 0
+        ctime0: 10717
+        ctime1: 25366
+        ctime2: 41711
+        ctime3: 51117
+        ctime4: 65535
         ctime5: 0
         ctime6: 0
         ctime7: 0
@@ -5236,9 +5236,9 @@ ParticleSystem:
         atime5: 0
         atime6: 0
         atime7: 0
-        m_Mode: 0
+        m_Mode: 1
         m_ColorSpace: -1
-        m_NumColorKeys: 2
+        m_NumColorKeys: 5
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -8681,7 +8681,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cc59d1372248f841ab47006a4de46eb, type: 2}
+  - {fileID: 2100000, guid: 71416c76cabcc8d41bc9c4289a03272e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9229,7 +9229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660d024c33d0ce842b874657b7b68ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnOn: 1
+  turnOn: 0
   recordCamera: {fileID: 637138046891511244}
   replayScreenContainer: {fileID: 637138047342230424}
   encodeHelper: {fileID: 7200000, guid: ba6d3b4b52c1b5041bd8b9370c657331, type: 3}

@@ -203,6 +203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paramater:
+    MAX_HP: 2
+    HP: 0
+    speedCoff: 1
+    canBodyExplode: 0
     BlockOffset: 2
     partolSpeed: 5
     chaseSpeed: 8
