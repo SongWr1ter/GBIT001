@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxName: doorBroken
-  maxHp: 2
+  maxHp: 1
   soundRadius: 0
 --- !u!50 &4330145989856495173
 Rigidbody2D:

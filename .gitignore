@@ -61,3 +61,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+Assets/BKBShaderSupport/Assets/ShaderLearning/URPVersion/BKB 2D Renderer Data.asset
+Assets/BKBShaderSupport/Assets/ShaderLearning/URPVersion/Wind/Shader Graphs_Wind.mat
+Assets/Resources/DOTweenSettings.asset
+Assets/Scenes/Sample/Replay.renderTexture
+Assets/Scenes/TempleteScene.unity
+ProjectSettings/ShaderGraphSettings.asset
+UserSettings/EditorUserSettings.asset
