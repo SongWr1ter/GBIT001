@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class RoutineShadow : MonoBehaviour
 {
-    public float max_record_time = 5f;
+    public float max_record_time = 10f;
     public float record_interval = .2f;
     private List<SpriteRenderer> shadows;
     private SpriteRenderer spr;

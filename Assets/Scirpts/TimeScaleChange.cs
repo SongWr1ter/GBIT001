@@ -82,9 +82,9 @@ public class TimeScaleChange : MonoBehaviour
     }
     #endregion
     #endregion
-    [Range(0,100f),Tooltip("虽然值是连续的，但是表现层是离散的")]
+    [Tooltip("虽然值是连续的，但是表现层是离散的")]
     public float timeEnergy;
-    public const float MAX_TIME_ENERGY = 100.0f;
+    public static float MAX_TIME_ENERGY = 100.0f;
 
     [Tooltip("满分100分，每秒减consumeSpeed的分")]
     [SerializeField]

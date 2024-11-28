@@ -186,7 +186,7 @@ public class PlayerControl : BaseBehavior
         switch(state)
         {
             case State.Normal:
-            time.rigidbody2D.velocity = mov.normalized * speed * furySpeedFactor;
+            time.rigidbody2D.velocity = mov.normalized * ((speed + TheShitOfReference.extraSpeed) * furySpeedFactor);
             break;
             case State.Roll:
             time.rigidbody2D.velocity = rollDir.normalized * rollSpeed;

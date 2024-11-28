@@ -19,7 +19,8 @@ public enum MESSAGE_TYPE
     FURY_MODE_ON,
     FURY_MODE_OFF,
     FOCUS_ON,
-    FOCUS_OFF
+    FOCUS_OFF,
+    UI_RETAILER
 }
 public struct CommonMessage
 {

@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGenerating: 0
-  maxShadowCacheCount: 15
-  shadowColor: {r: 0, g: 0.03529412, b: 1, a: 0.3137255}
+  maxShadowCacheCount: 7
+  shadowColor: {r: 0.29803756, g: 0.29803756, b: 0.6650944, a: 0.3137255}
   shadowMaterial: {fileID: 2100000, guid: 03b3eb5e80df798419665f114f929e53, type: 2}
   record_interval: 0.05

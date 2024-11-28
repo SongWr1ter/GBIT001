@@ -325,9 +325,9 @@ public class simpleFSM : BaseBehavior,IHearingReceiver
             WeaponItem lootItem = loot.GetComponent<WeaponItem>();
             lootItem.haveOwner = true;
             if (paramater.attackArea is NormalAttack rangedAttack)
-                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(rangedAttack.bulletNum);
+                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(rangedAttack.bulletNum,true);
             else if (paramater.attackArea is LaserAttack laserAttack)
-                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(laserAttack.bulletNum);
+                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(laserAttack.bulletNum,true);
         }
 
         if (paramater.isSummoned)

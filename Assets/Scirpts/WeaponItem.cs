@@ -69,10 +69,15 @@ public class WeaponItem : MonoBehaviour
     {
         return data;
     }
-
-    public void SetAmmoAmount(int amount)
+    
+    public void SetAmmoAmount(int amount,bool flag = false)
     {
-        data.Ammo = amount;
+        if(flag)
+            data.Ammo = amount + Mathf.CeilToInt(data.maxAmmo * TheShitOfReference.extraAmmoAmount);
+        else
+        {
+            data.Ammo = amount;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
