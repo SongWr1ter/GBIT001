@@ -10,6 +10,7 @@ public class DeadBody : BaseBehavior
     [SerializeField]private float distance;
     [Tooltip("飞出去的时间")]
     [SerializeField]private float duration;
+    private bool _canExplode;
     public Sprite deadSprite{
         get{
             if(spriteRenderer==null){
@@ -31,15 +32,6 @@ public class DeadBody : BaseBehavior
     private void Awake() {
         MessageCenter.AddListener(OnGameRestart);
     }
-    private void OnEnable() {
-        
-    }
-    private void Update() {
-        // if(Vector3.Distance(transform.position,targetPoint) > .1f)
-        // {
-        //     transform.position = Vector3.Lerp(transform.position,targetPoint,time.deltaTime * speed);
-        // }
-    }
 
     private void OnDestroy() {
         MessageCenter.RemoveListner(OnGameRestart);
@@ -60,12 +52,23 @@ public class DeadBody : BaseBehavior
     public void BodyMove(bool showBlood)
     {
         targetPoint = transform.position + -transform.up * distance;
-        if (showBlood)
-        {
-            bodyIndex = bodyIndex % 4 + 1;
-            //Debug.Log("blood"+bodyIndex.ToString());
-            GetComponent<Animator>().Play("blood" + bodyIndex.ToString());
-        }
-        TimeScaledDoMove.Instance.DoMove(GetComponent<Timeline>(), targetPoint, duration);
+        // if (showBlood) 出大血
+        // {
+        //     bodyIndex = bodyIndex % 4 + 1;
+        //     //Debug.Log("blood"+bodyIndex.ToString());
+        //     GetComponent<Animator>().Play("blood" + bodyIndex);
+        // }
+        TimeScaledDoMove.Instance.DoMove(GetComponent<Timeline>(), targetPoint, duration).OnCallBack(Explode);
+    }
+
+    private void Explode()
+    {
+        if(_canExplode)
+            Instantiate(TheShitOfReference.AllShitOfReference.CirCleExplison,transform.position,Quaternion.identity);
+    }
+
+    public void SetExplode(bool v)
+    {
+        _canExplode = v;
     }
 }

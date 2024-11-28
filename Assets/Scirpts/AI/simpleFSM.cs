@@ -23,6 +23,8 @@ public class AIParamater
 {
     public int MAX_HP = 2;
     public int HP;
+    public float speedCoff = 1.0f;
+    public bool canBodyExplode = true;
     public float BlockOffset;
     public float partolSpeed;
     public float chaseSpeed;
@@ -309,9 +311,13 @@ public class simpleFSM : BaseBehavior,IHearingReceiver
         DeadBody body = bodyObj.GetComponent<DeadBody>();
         if(body!=null){
             body.setStageID(paramater.stageID);
+            body.SetExplode(paramater.canBodyExplode);
             Sprite sprite = GetDeadSprite(AttackArea.AttackType.jinzhan);//一直是近战造成的尸体
             if(sprite!=null) body.deadSprite = sprite;
             body.BodyMove(paramater.showBlood);
+            GameObject g = Instantiate(TheShitOfReference.AllShitOfReference.StarReference, transform.position, Yquaternion);
+            ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
+            m.stopAction = ParticleSystemStopAction.Callback;
         }
         if (paramater.lootPrefab)
         {
@@ -319,9 +325,9 @@ public class simpleFSM : BaseBehavior,IHearingReceiver
             WeaponItem lootItem = loot.GetComponent<WeaponItem>();
             lootItem.haveOwner = true;
             if (paramater.attackArea is NormalAttack rangedAttack)
-                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(rangedAttack.bulletNum);
+                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(rangedAttack.bulletNum,true);
             else if (paramater.attackArea is LaserAttack laserAttack)
-                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(laserAttack.bulletNum);
+                lootItem.GetComponent<WeaponItem>().SetAmmoAmount(laserAttack.bulletNum,true);
         }
 
         if (paramater.isSummoned)

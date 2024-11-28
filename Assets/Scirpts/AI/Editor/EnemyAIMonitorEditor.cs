@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 [CustomEditor(typeof(EnemyAIMonitor))]
@@ -10,7 +11,8 @@ public class EnemyAIMonitorEditor : Editor {
     private bool activeAddPatrolMode = false;
     private List<Transform> patrolPointsList = new List<Transform>();
     private Transform[] patrolPointsArray;
-    private const string path = "Assets/Prefabs/new/Enemy/TimeCrack.prefab";
+    private const string timeCrackPath = "Assets/Prefabs/new/Enemy/TimeCrack.prefab";
+    private const string shieldPath = "Assets/Prefabs/new/Enemy/Shield.prefab";
     private 
     enum FSMState{
         simpleFSM,
@@ -18,12 +20,20 @@ public class EnemyAIMonitorEditor : Editor {
         standFSM//not implemented yet
     }
     private int fsmStateId = 0;//simpleFSM=0,actorFSM=1,standFSM=2
+    private bool _hasTimeCrack = false;
+    private bool _hasShield = false;
+    private bool _hasFlashSpeed;
+    private bool _hasBodyExplosion;
+    private bool _hasGhostMode;
+    private Color _outlineColor;
+    
     private void OnEnable() {
         LoadPatrolPointsList();
         SceneView.duringSceneGui += OnSceneGUI;
         EnemyAIMonitor ctr = target as EnemyAIMonitor;
         ctr.Refresh();
         simpleFSM fsm = ctr.GetFSM();
+        // ctr.outlineColor = _outlineColor;
         //fsm is actorFSM
         if(fsm is actorFSM)
         {
@@ -35,12 +45,32 @@ public class EnemyAIMonitorEditor : Editor {
             fsmStateId = 0;
         }
         //fsm is standFSM
+        _hasShield = ctr._hasShield;
+        _hasTimeCrack = ctr._hasTimeCrack;
+        _hasFlashSpeed = ctr._hasFlashSpeed;
+        _hasGhostMode = ctr._hasGhostMode;
+        _hasBodyExplosion = ctr._hasBodyExplosion;
     }
     private void OnDestroy() {
         SceneView.duringSceneGui -= OnSceneGUI;
     }
     public override void OnInspectorGUI() {
         base.OnInspectorGUI();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        if(GUILayout.Button("设置描边颜色",GUILayout.MaxWidth(100f)))
+        {
+            var s = target as EnemyAIMonitor;
+            var rend = s.GetComponent<Renderer>();
+            MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
+            rend.GetPropertyBlock(propertyBlock);
+            propertyBlock.SetColor("_Color", s.outlineColor);
+            rend.SetPropertyBlock(propertyBlock);
+            
+            EditorUtility.SetDirty(s);
+            Undo.RecordObject(s,"set outline color");
+        }
+        GUILayout.EndHorizontal();
         
         GUILayout.Space(10);
         if(GUILayout.Button("Refresh",GUILayout.MaxWidth(55f)))
@@ -142,17 +172,144 @@ public class EnemyAIMonitorEditor : Editor {
         }
         #endregion
 
-        #region 其他设置
+        #region 特殊敌人属性设置
+        GUILayout.Label("特殊敌人属性设置");
+        #region 时空裂缝
+
         GUILayout.Space(10);
-        GUILayout.Label("其他设置");
-        if(GUILayout.Button("时空裂缝",GUILayout.MaxWidth(55f))){
-            GameObject loadedGameObject = AssetDatabase.LoadAssetAtPath<GameObject>(path);
+        
+        GUILayout.BeginHorizontal(); //开始水平布局
+        if(GUILayout.Button("时空裂缝",GUILayout.MaxWidth(100f))){
+            GameObject loadedGameObject = AssetDatabase.LoadAssetAtPath<GameObject>(timeCrackPath);
             EnemyAIMonitor ctl = target as EnemyAIMonitor;
             GameObject @object = PrefabUtility.InstantiatePrefab(loadedGameObject,ctl.transform) as GameObject;
             Undo.RegisterCreatedObjectUndo(@object, loadedGameObject.name);
             @object.transform.position = ctl.transform.position;
+            _hasTimeCrack = true;
+            ctl._hasTimeCrack = true;
+            EditorUtility.SetDirty(ctl);
+        }
+        GUILayout.Space(50);
+        if (_hasTimeCrack)
+        {
+            if(GUILayout.Button("删除",GUILayout.MaxWidth(100f))){
+                EnemyAIMonitor ctl = target as EnemyAIMonitor;
+                DestroyImmediate(ctl.transform.Find("TimeCrack").gameObject);
+                _hasTimeCrack = false;
+                ctl._hasTimeCrack = false;
+                EditorUtility.SetDirty(ctl);
+            }
+        }
+        GUILayout.Space(20);
+        if(GUILayout.Button("刷新",GUILayout.MaxWidth(50f))){
+            EnemyAIMonitor ctl = target as EnemyAIMonitor;
+            _hasTimeCrack = ctl.transform.Find("TimeCrack") != null;
+        }
+        GUILayout.EndHorizontal(); //结束水平布局
+
+        #endregion
+
+        #region 盾牌
+
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal(); //开始水平布局
+        if(GUILayout.Button("盾牌",GUILayout.MaxWidth(100f))){
+            GameObject loadedGameObject = AssetDatabase.LoadAssetAtPath<GameObject>(shieldPath);
+            EnemyAIMonitor ctl = target as EnemyAIMonitor;
+            GameObject @object = PrefabUtility.InstantiatePrefab(loadedGameObject,ctl.transform) as GameObject;
+            Undo.RegisterCreatedObjectUndo(@object, loadedGameObject.name);
+            @object.transform.position = ctl.transform.position;
+            _hasShield = true;
+            ctl._hasShield = true;
+            EditorUtility.SetDirty(ctl);
+        }
+        GUILayout.Space(50);
+        if (_hasShield)
+        {
+            if(GUILayout.Button("删除",GUILayout.MaxWidth(100f))){
+                EnemyAIMonitor ctl = target as EnemyAIMonitor;
+                DestroyImmediate(ctl.transform.Find("Shield").gameObject);
+                _hasShield = false;
+                ctl._hasShield = false;
+                EditorUtility.SetDirty(ctl);
+            }
+        }
+        GUILayout.Space(20);
+        if(GUILayout.Button("刷新",GUILayout.MaxWidth(50f))){
+            EnemyAIMonitor ctl = target as EnemyAIMonitor;
+            _hasShield = ctl.transform.Find("Shield") != null;
+        }
+        GUILayout.EndHorizontal(); //结束水平布局
+
+        #endregion
+        
+        GUILayout.Space(10);
+        if (!_hasFlashSpeed)
+        {
+            if(GUILayout.Button("飞毛腿",GUILayout.MaxWidth(100f))){
+                _hasFlashSpeed = true;
+                EnemyAIMonitor ctr = target as EnemyAIMonitor;
+                ctr._hasFlashSpeed = true;
+                var source = new SerializedObject(ctr.GetFSM());
+                source.FindProperty("paramater").FindPropertyRelative("speedCoff").floatValue = 1.5f;
+                var shadow = new SerializedObject(ctr.GetComponent<FollowShadow>());
+                shadow.FindProperty("isGenerating").boolValue = true;
+                EditorUtility.SetDirty(ctr);
+                source.ApplyModifiedProperties();
+                shadow.ApplyModifiedProperties();
+            }
+        }
+        else
+        {
+            if(GUILayout.Button("取消飞毛腿",GUILayout.MaxWidth(100f))){
+                _hasFlashSpeed = false;
+                EnemyAIMonitor ctr = target as EnemyAIMonitor;
+                ctr._hasFlashSpeed = false;
+                var source = new SerializedObject(ctr.GetFSM());
+                source.FindProperty("paramater").FindPropertyRelative("speedCoff").floatValue = 1f;
+                var shadow = new SerializedObject(ctr.GetComponent<FollowShadow>());
+                shadow.FindProperty("isGenerating").boolValue = true;
+                EditorUtility.SetDirty(ctr);
+                source.ApplyModifiedProperties();
+                shadow.ApplyModifiedProperties();
+            }
+        }
+        GUILayout.Space(10);
+        if (!_hasBodyExplosion)
+        {
+            if(GUILayout.Button("尸爆",GUILayout.MaxWidth(100f))){
+                _hasBodyExplosion = true;
+                EnemyAIMonitor ctr = target as EnemyAIMonitor;
+                ctr._hasFlashSpeed = true;
+                var source = new SerializedObject(ctr.GetFSM());
+                source.FindProperty("paramater").FindPropertyRelative("canBodyExplode").boolValue = true;
+                EditorUtility.SetDirty(ctr);
+                source.ApplyModifiedProperties();
+            }
+        }
+        else
+        {
+            if(GUILayout.Button("取消尸爆",GUILayout.MaxWidth(100f))){
+                _hasBodyExplosion = false;
+                EnemyAIMonitor ctr = target as EnemyAIMonitor;
+                ctr._hasFlashSpeed = false;
+                var source = new SerializedObject(ctr.GetFSM());
+                source.FindProperty("paramater").FindPropertyRelative("canBodyExplode").boolValue = false;
+                EditorUtility.SetDirty(ctr);
+                source.ApplyModifiedProperties();
+            }
+        }
+        GUILayout.Space(10);
+        if(GUILayout.Button("幽灵",GUILayout.MaxWidth(100f))){
+            EnemyAIMonitor ctr = target as EnemyAIMonitor;
+            _hasGhostMode = true;
+            ctr._hasGhostMode = true;
+            ctr.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f,.4f);
+            EditorUtility.SetDirty(ctr);
         }
         #endregion
+        
+        
     }
 
     private void OnSceneGUI(SceneView sceneView)

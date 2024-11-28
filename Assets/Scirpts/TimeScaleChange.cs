@@ -82,9 +82,9 @@ public class TimeScaleChange : MonoBehaviour
     }
     #endregion
     #endregion
-    [Range(0,100f),Tooltip("虽然值是连续的，但是表现层是离散的")]
+    [Tooltip("虽然值是连续的，但是表现层是离散的")]
     public float timeEnergy;
-    public const float MAX_TIME_ENERGY = 100.0f;
+    public static float MAX_TIME_ENERGY = 100.0f;
 
     [Tooltip("满分100分，每秒减consumeSpeed的分")]
     [SerializeField]
@@ -199,7 +199,7 @@ public class TimeScaleChange : MonoBehaviour
                 if(isStop && hasPlayed_isStop)//hasPlayed_isStop代表Dotween动画是否播放完成
                 {//取消时停
                     hasPlayed_isStop = false;
-                    DOTween.To(() => VFXClock.localTimeScale, x => VFXClock.localTimeScale = x, 1f,1f).SetEase(Ease.OutSine).OnComplete(()=>
+                    DOTween.To(() => rootClock.localTimeScale, x => rootClock.localTimeScale = x, 1f,1f).SetEase(Ease.OutSine).OnComplete(()=>
                     {
                         hasPlayed_isStop = true;
                     });
@@ -213,14 +213,13 @@ public class TimeScaleChange : MonoBehaviour
                     if(timeEnergy >= 20.0f)
                     {
                         hasPlayed_isStop = false;
-                        DOTween.To(() => VFXClock.localTimeScale, x => VFXClock.localTimeScale = x, 10E-5f,.25f).SetEase(Ease.OutSine);
-                        DOTween.To(() => screenShockRadius, x => screenShockRadius = x, 1.0f,1f).SetEase(Ease.OutBack).OnComplete(()=>{
+                        DOTween.To(() => rootClock.localTimeScale, x => rootClock.localTimeScale = x, .001f,.25f).SetEase(Ease.OutSine);
+                        DOTween.To(() => screenShockRadius, x => screenShockRadius = x, 1.2f,1f).SetEase(Ease.OutBack).OnComplete(()=>{
                             hasPlayed_isStop = true;
                         });
-                        DOTween.To(()=>chromaticAberrationIndensity,x => chromaticAberrationIndensity = x,.4f,.5f).SetEase(Ease.OutBack);
+                        DOTween.To(()=>chromaticAberrationIndensity,x => chromaticAberrationIndensity = x,1f,.5f).SetEase(Ease.OutBack);
                         TimeStopTransitionIndensity = .8f;
                         screenShockIndensity = 1.0f;
-                        enemyClock.localTimeScale = 10E-3f;
                         SetTimeStop(true);
                         SetTimeEnergyIcon(true);
                     }
@@ -262,37 +261,56 @@ public class TimeScaleChange : MonoBehaviour
     void FocusPower()
     {
         if(!isStop)
-            if(!isFocusPowerOn && hasPlayed_FocusPowenOn)
+            if(!isFocusPowerOn && hasPlayed_FocusPowenOn)//open
             {
                 hasPlayed_FocusPowenOn = false;
-                DOTween.To(() => rootClock.localTimeScale, x => rootClock.localTimeScale = x, .2f,.5f)
+                DOTween.To(() => rootClock.localTimeScale, x => rootClock.localTimeScale = x, .75f,.5f)
                 .SetEase(Ease.InOutExpo).OnComplete(()=>{
                     hasPlayed_FocusPowenOn = true;
                 });
+                DOTween.To(() => VFXClock.localTimeScale, x => VFXClock.localTimeScale = x, .25f,.25f).SetEase(Ease.OutSine);
+                enemyClock.localTimeScale = .25f;
                 isFocusPowerOn = true;
-                //focusPower.changeColor(true);特效
                 SetTimeEnergyIcon(true);
+                //特效开
+                DOTween.To(()=>chromaticAberrationIndensity,x => chromaticAberrationIndensity = x,1f,.5f).SetEase(Ease.OutBack);
+                MessageCenter.SendMessage(new CommonMessage()
+                {
+                    Mid = (int)MESSAGE_TYPE.FOCUS_ON
+                },MESSAGE_TYPE.FOCUS_ON);
             }
-            else if(isFocusPowerOn && hasPlayed_FocusPowenOn)
+            else if(isFocusPowerOn && hasPlayed_FocusPowenOn)//off
             {
                 hasPlayed_FocusPowenOn = false;
                 DOTween.To(() => rootClock.localTimeScale, x => rootClock.localTimeScale = x, 1.0f,.5f)
                 .SetEase(Ease.InOutExpo).OnComplete(()=>{
                     hasPlayed_FocusPowenOn = true;
                 });
+                DOTween.To(() => VFXClock.localTimeScale, x => VFXClock.localTimeScale = x, 1f,1f).SetEase(Ease.OutSine);
+                enemyClock.localTimeScale = 1.0f;
                 isFocusPowerOn = false;
-                //focusPower.changeColor(false);特效关
+                //特效关
                 SetTimeEnergyIcon(false);
+                chromaticAberrationIndensity = 0f;
+                MessageCenter.SendMessage(new CommonMessage()
+                {
+                    Mid = (int)MESSAGE_TYPE.FOCUS_OFF
+                },MESSAGE_TYPE.FOCUS_OFF);
             }
         
     }
     private void ResetTimeControlAllShitOfValues(){
         TimeStopTransitionIndensity = 0f;
         enemyClock.localTimeScale = 1.0f;
+        rootClock.localTimeScale = 1.0f;
         chromaticAberrationIndensity = 0f;
         //Debug.Log("T键取消时停");
         SetTimeStop(false);
         SetTimeEnergyIcon(false);
+        MessageCenter.SendMessage(new CommonMessage()
+        {
+            Mid = (int)MESSAGE_TYPE.FOCUS_OFF
+        },MESSAGE_TYPE.FOCUS_OFF);
     }
     //死亡、能量不够、通关会调用
     void ResetTimeControl()
@@ -304,8 +322,6 @@ public class TimeScaleChange : MonoBehaviour
         screenShockRadius = 0.0f;
         screenShockIndensity = 0.0f;
 
-
-        //弃用的
         if(isFocusPowerOn)
         {
             rootClock.localTimeScale = 1.0f;
@@ -438,5 +454,5 @@ public class TimeScaleChange : MonoBehaviour
     public void ChangeConsumeFactor(int value){
         consumeFactor += value;
     }
-
+    
 }
