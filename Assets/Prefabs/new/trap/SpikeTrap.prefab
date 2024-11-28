@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1084836801034483902}
   - component: {fileID: 7022525632887943201}
+  - component: {fileID: 8687824046154030373}
   m_Layer: 0
   m_Name: SpikeTrap
   m_TagString: Untagged
@@ -52,6 +53,23 @@ MonoBehaviour:
   show_period: 1
   spikeOnSprite: {fileID: -696107485, guid: 3b9cf5057ff88f14ebf96aa0fa5c13e6, type: 3}
   spikeOffSprite: {fileID: -991035627, guid: 3b9cf5057ff88f14ebf96aa0fa5c13e6, type: 3}
+--- !u!114 &8687824046154030373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180091644905805659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recordingInterval: 0.5
+  _mode: 1
+  _globalClockKey: Enemy
+  _rewindable: 0
+  _recordingDuration: 30
 --- !u!1001 &2552376396688611482
 PrefabInstance:
   m_ObjectHideFlags: 0
