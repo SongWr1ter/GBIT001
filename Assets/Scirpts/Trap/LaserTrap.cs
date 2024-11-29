@@ -32,7 +32,7 @@ public class LaserTrap : RoutineTrap
             lineRenderer.SetPosition(1, hitPoint);
             edgeCollider2D.SetPoints(new List<Vector2>() { Vector3.zero, transform.InverseTransformPoint(hitPoint) });
             laser.SetActive(true);
-            SoundManager.PlayAudio("laser");
+            SoundManager.PlayAudio("laser",transform.position,3f);
         }
         //transform.RotateAround(transform.position, Vector3.forward, 360f * time.fixedDeltaTime);
     }

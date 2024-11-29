@@ -7,6 +7,6 @@ public class AllShitOfReference : ScriptableObject {
     public GameObject PrefabReference1;
     public GameObject TransGate_arrow;
     public GameObject CirCleExplison;
-    public GameObject PrefabReference4;
+    public GameObject CirCleExplisonCustom;
     public GameObject StarReference;
 }
