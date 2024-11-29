@@ -10,6 +10,7 @@ public class MainTitle : MonoBehaviour
     [SerializeField]private CanvasGroup MatinTitilePanel;
     [SerializeField]private GameObject choosePanel;
     [SerializeField]private GameObject staffPanel;
+    [SerializeField]private StoryPanel storyPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class MainTitle : MonoBehaviour
         MatinTitilePanel.blocksRaycasts = false;
         choosePanel.GetComponent<CanvasGroup>().interactable = true;
         choosePanel.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        storyPanel.ok();
     }
 
     public void StaffBtn(){

@@ -88,7 +88,7 @@ Animator:
   m_GameObject: {fileID: 4667527998873599045}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: c3f81b1257cc2ad469f8ab249a9b58a8, type: 2}
+  m_Controller: {fileID: 22100000, guid: 08b2bf941f1cf484eb9b59b39969f1ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -238,8 +238,8 @@ MonoBehaviour:
     isTargetInArea: 0
     attackArea: {fileID: 0}
     isDead: 0
-    deadBodyPrefab: {fileID: 3270843580065873301, guid: 639d3b3e87acbfc409b45ff5647087b4, type: 3}
-    deadBodySO: {fileID: 11400000, guid: 0fc425e7da16a6c4bbf88af4ba4064d0, type: 2}
+    deadBodyPrefab: {fileID: 3270843580065873301, guid: 1b84aef822f7d864da105ef5c9b204e5, type: 3}
+    deadBodySO: {fileID: 11400000, guid: 7b3d66bbd173e45468d3e0e41464074e, type: 2}
     BloodPrefab: {fileID: 292720700197274783, guid: b5418d18645b84d43a885f87b58e7e36, type: 3}
     stageID: 0
     isFreeze: 0
@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 982464271, guid: ddcb8cf325a9f9247a5eaa8f1c658c3b, type: 3}
+  m_Sprite: {fileID: 648681875, guid: 105d22d165254144d89bd8e8d6a51f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ef8e23427b24064db7142b928a6627d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0, b: 0, a: 0}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
   fsm: {fileID: 3189599664053915847}
   _hasTimeCrack: 0
   _hasShield: 0
@@ -369,7 +369,7 @@ Transform:
   m_GameObject: {fileID: 4667527999099806388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.26, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -431,7 +431,7 @@ Transform:
   m_GameObject: {fileID: 5750777353914483994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.023, y: -0.089, z: 0}
+  m_LocalPosition: {x: 0.045, y: -0.037, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
   m_ConstrainProportionsScale: 1
   m_Children: []

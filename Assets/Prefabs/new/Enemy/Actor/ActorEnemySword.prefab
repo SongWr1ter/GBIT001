@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1821930081263264457}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.049, y: -0.196, z: 0}
+  m_LocalPosition: {x: -0.001, y: 0.011, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -177,7 +177,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.45299172, y: 0.43741482}
+  m_Offset: {x: 0.05925858, y: 0.36774603}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -188,7 +188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3893466, y: 0.69172657}
+  m_Size: {x: 0.6792948, y: 0.49992532}
   m_EdgeRadius: 0
 --- !u!114 &3949512914870516451
 MonoBehaviour:
@@ -237,7 +237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3949512914945762334}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -256,7 +256,7 @@ Animator:
   m_GameObject: {fileID: 3949512914945762334}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: a0f8f35a951b92945a927bcc192bf0e5, type: 2}
+  m_Controller: {fileID: 22100000, guid: 5e14cbecdebe53148889681954e6020f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -308,7 +308,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 302315282, guid: bedfd78615e15b440a4c51c90a894d55, type: 3}
+  m_Sprite: {fileID: -412159259, guid: 105d22d165254144d89bd8e8d6a51f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -351,8 +351,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0007765122, y: -0.2}
-  m_Size: {x: 1.1408993, y: 0.38305637}
+  m_Offset: {x: 0.00077653566, y: 0.052489214}
+  m_Size: {x: 0.8598089, y: 0.4461824}
   m_Direction: 1
 --- !u!50 &3949512914945762323
 Rigidbody2D:
@@ -425,7 +425,7 @@ MonoBehaviour:
   traversableTags: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
-    value: -1
+    value: 1
 --- !u!114 &3949512914945762321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,15 +493,15 @@ MonoBehaviour:
     isTargetInArea: 0
     attackArea: {fileID: 0}
     isDead: 0
-    deadBodyPrefab: {fileID: 3270843580065873301, guid: 639d3b3e87acbfc409b45ff5647087b4, type: 3}
-    deadBodySO: {fileID: 11400000, guid: 1d0b791867ad42246aa1da03ff4d28af, type: 2}
+    deadBodyPrefab: {fileID: 3270843580065873301, guid: 1b84aef822f7d864da105ef5c9b204e5, type: 3}
+    deadBodySO: {fileID: 11400000, guid: 7b3d66bbd173e45468d3e0e41464074e, type: 2}
     BloodPrefab: {fileID: 292720700197274783, guid: b5418d18645b84d43a885f87b58e7e36, type: 3}
     stageID: 0
     isFreeze: 0
     reactTime: 0.8
     isHeared: 0
     heardPos: {x: 0, y: 0, z: 0}
-    lootPrefab: {fileID: 0}
+    lootPrefab: {fileID: 2524891709784600511, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
     questionMark: {fileID: 19465078452963167, guid: 71c7ae4b5469a4d43811147980cbc705, type: 3}
     exclamationMark: {fileID: 185929588805492897, guid: 9b81c161b12fc0a4db32a26279d16268, type: 3}
     targeted: 0
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355addd9f9aca364d9c23f3fceeebf30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGenerating: 0
+  isGenerating: 1
   maxShadowCacheCount: 7
   shadowColor: {r: 0.29803756, g: 0.29803756, b: 0.6650944, a: 0.3137255}
   shadowMaterial: {fileID: 2100000, guid: 03b3eb5e80df798419665f114f929e53, type: 2}

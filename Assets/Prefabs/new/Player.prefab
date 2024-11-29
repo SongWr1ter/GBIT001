@@ -108,8 +108,8 @@ Transform:
   m_GameObject: {fileID: 2359064211862862291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07999992, y: -0.3000002, z: 0}
-  m_LocalScale: {x: 0.71999997, y: 0.71999997, z: 0.71999997}
+  m_LocalPosition: {x: -0.034, y: 0.019, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2530007953462262470}
@@ -212,11 +212,11 @@ GameObject:
   - component: {fileID: 2530007953462262474}
   - component: {fileID: 2530007953462262475}
   - component: {fileID: 6311645430008203058}
-  - component: {fileID: 2530007953462262477}
   - component: {fileID: 5304436658869608765}
   - component: {fileID: 3130077756361011478}
   - component: {fileID: 1147108621}
   - component: {fileID: 1394225755865228479}
+  - component: {fileID: 4820237343123004179}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -285,7 +285,7 @@ SpriteRenderer:
   m_SortingLayerID: 1614621447
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 9d9d3f713130ca448975c39086695ad5, type: 3}
+  m_Sprite: {fileID: -687292468, guid: d60e198880f0b264ca3086aee6195b44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -387,7 +387,7 @@ Animator:
   m_GameObject: {fileID: 2530007953462262469}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 9fddc2ee87e921c4cb93c76b8b2c1576, type: 2}
+  m_Controller: {fileID: 22100000, guid: da06c71568b6674469348ef5f99e5e2b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -398,41 +398,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &2530007953462262477
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2530007953462262469}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.38774738
 --- !u!114 &5304436658869608765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ammo: 0
-  meleeController: {fileID: 22100000, guid: 9fddc2ee87e921c4cb93c76b8b2c1576, type: 2}
+  shootTrans: {fileID: 2530007952843452697}
+  meleeController: {fileID: 22100000, guid: 2697fd89c3020a04590fbc840f70c260, type: 2}
   meleeWeapon: {fileID: 7376602474957603682}
   rangedWeapon: {fileID: 0}
   lastMeleeWeapon: {fileID: 0}
@@ -504,6 +470,41 @@ MonoBehaviour:
   shadowColor: {r: 4, g: 0.15424448, b: 0, a: 0.3137255}
   shadowMaterial: {fileID: 2100000, guid: 03b3eb5e80df798419665f114f929e53, type: 2}
   record_interval: 0.08
+--- !u!58 &4820237343123004179
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530007953462262469}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04, y: 0.06}
+  serializedVersion: 2
+  m_Radius: 0.27
 --- !u!1 &3130077756706392534
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,9 +637,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2524891709784600509, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 2697fd89c3020a04590fbc840f70c260, type: 2}
     - target: {fileID: 2524891709784600511, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
       propertyPath: m_Name
       value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524891709784600511, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

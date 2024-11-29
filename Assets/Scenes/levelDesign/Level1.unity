@@ -4729,7 +4729,7 @@ MonoBehaviour:
     reactTime: 0.8
     isHeared: 0
     heardPos: {x: 0, y: 0, z: 0}
-    lootPrefab: {fileID: 0}
+    lootPrefab: {fileID: 2524891709784600511, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
     questionMark: {fileID: 19465078452963167, guid: 71c7ae4b5469a4d43811147980cbc705, type: 3}
     exclamationMark: {fileID: 185929588805492897, guid: 9b81c161b12fc0a4db32a26279d16268, type: 3}
     targeted: 0
@@ -5854,7 +5854,7 @@ MonoBehaviour:
     reactTime: 0.8
     isHeared: 0
     heardPos: {x: 0, y: 0, z: 0}
-    lootPrefab: {fileID: 0}
+    lootPrefab: {fileID: 2524891709784600511, guid: 8d60fbbe4a6bafa46845391114aaf6fa, type: 3}
     questionMark: {fileID: 19465078452963167, guid: 71c7ae4b5469a4d43811147980cbc705, type: 3}
     exclamationMark: {fileID: 185929588805492897, guid: 9b81c161b12fc0a4db32a26279d16268, type: 3}
     targeted: 0

@@ -13,6 +13,7 @@ public class WeaponItem : MonoBehaviour
     public float timer = 0;
     public Material highlightMat;
     private Material defaultmat;
+    public Transform PlayerWeapon;
 
     private void Awake()
     {
@@ -45,8 +46,16 @@ public class WeaponItem : MonoBehaviour
         if (timer < 0)
         {
             data.Ammo -= 1;
-            SoundManager.PlayAudio(data.shootSFXname);
-            data.Attack(transform.position, transform.rotation);
+            SoundManager.PlayAudio(data.shootSFXname,transform.position,data.shootSoundRadius * 2.0f);
+            if (PlayerWeapon is not null)
+            {
+                data.Attack(PlayerWeapon.position, transform.rotation);
+            }
+            else
+            {
+                data.Attack(transform.position, transform.rotation);
+            }
+            
             HearingPoster.PostVoice(transform.position, data.shootSoundRadius);
             timer = shootCd;
             return true;

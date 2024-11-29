@@ -21,7 +21,7 @@ public class Bullet : BaseBehavior
     {
         
         Vector3 oriPos = transform.position;//记录原来的位置
-        transform.Translate(speed * transform.up * time.deltaTime,Space.World);
+        transform.Translate(transform.up * (speed * time.deltaTime),Space.World);
         float length = (transform.position - oriPos).magnitude;//射线的长度
 		Vector3 direction = transform.position - oriPos;//方向
         float deltaLength = length / iteration;
@@ -29,7 +29,7 @@ public class Bullet : BaseBehavior
         for (int i = 0; i < iteration; i++)
         {
 
-            oriPos = oriPos + deltaLength * direction.normalized * i;
+            oriPos = oriPos + direction.normalized * (deltaLength * i);
             hitinfo = Physics2D.Raycast(oriPos, direction, deltaLength, layer);//在两个位置之间发起一条射线，然后通过这条射线去检测有没有发生碰撞
             //check
             if (hitinfo)
@@ -107,6 +107,7 @@ public class Bullet : BaseBehavior
         {
             transform.up = -transform.up;
             canDamagePlayer = false;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 

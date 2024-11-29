@@ -455,4 +455,5 @@ public class TimeScaleChange : MonoBehaviour
         consumeFactor += value;
     }
     
+    
 }

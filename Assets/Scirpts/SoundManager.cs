@@ -94,13 +94,13 @@ public static class SoundManager
     }
 
     //3D音效，不过应该用不上
-    public static void PlayAudio(string _sfxName,Vector3 pos)
+    public static void PlayAudio(string _sfxName,Vector3 pos,float distance)
     {
         GameObject soundObj = new GameObject("Sound");
         AudioSource audioSource = soundObj.AddComponent<AudioSource>();
         audioSource.clip = GetAudio(_sfxName);
         soundObj.transform.position = pos;
-        audioSource.maxDistance = 100f;
+        audioSource.maxDistance = distance;
         audioSource.spatialBlend = 1f;
         audioSource.rolloffMode = AudioRolloffMode.Linear;
         audioSource.dopplerLevel = 0f;

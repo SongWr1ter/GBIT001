@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 4565251956315241040}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.053, y: -0.453, z: 0}
+  m_LocalPosition: {x: 0.033, y: -0.061, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -111,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 6739887594716303522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.17, y: 0.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -223,8 +223,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02529119, y: -0.45}
-  m_Size: {x: 0.8630637, y: 0.38305405}
+  m_Offset: {x: 0.05410749, y: -0.022083217}
+  m_Size: {x: 0.806651, y: 0.48967662}
   m_Direction: 1
 --- !u!95 &6739887594775301722
 Animator:
@@ -236,7 +236,7 @@ Animator:
   m_GameObject: {fileID: 6739887594775301715}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: d7719bf3490ff494dbf88649394359d8, type: 2}
+  m_Controller: {fileID: 22100000, guid: 758c55fe7ac892e4cb56ccd10d1d23b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -386,8 +386,8 @@ MonoBehaviour:
     isTargetInArea: 0
     attackArea: {fileID: 0}
     isDead: 0
-    deadBodyPrefab: {fileID: 3270843580065873301, guid: 639d3b3e87acbfc409b45ff5647087b4, type: 3}
-    deadBodySO: {fileID: 11400000, guid: 9fc996bd570e2bc44a84b2db99c115ad, type: 2}
+    deadBodyPrefab: {fileID: 3270843580065873301, guid: 1b84aef822f7d864da105ef5c9b204e5, type: 3}
+    deadBodySO: {fileID: 11400000, guid: 7b3d66bbd173e45468d3e0e41464074e, type: 2}
     BloodPrefab: {fileID: 292720700197274783, guid: b5418d18645b84d43a885f87b58e7e36, type: 3}
     stageID: 0
     isFreeze: 0
@@ -443,7 +443,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5fea693b51db0aa4ba8d5f7cbf3b65f9, type: 3}
+  m_Sprite: {fileID: 2116818620, guid: 105d22d165254144d89bd8e8d6a51f8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
