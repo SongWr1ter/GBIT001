@@ -19,7 +19,7 @@ public class DeadBody : BaseBehavior
             return spriteRenderer.sprite;
         }
         set{
-            if(spriteRenderer==null){
+            if(spriteRenderer is null){
                 spriteRenderer = transform.Find("body").GetComponent<SpriteRenderer>();
             }
             spriteRenderer.sprite = value;
@@ -28,7 +28,6 @@ public class DeadBody : BaseBehavior
     private SpriteRenderer spriteRenderer;
     private StageID stageID;
     Vector3 targetPoint;
-    static int bodyIndex = 0;
     private void Awake() {
         MessageCenter.AddListener(OnGameRestart);
     }

@@ -29,7 +29,7 @@ public class ComboBox : BaseBehavior
     private const float lossComboPeriod = 0.01f;
     private bool comboLossBegin = false;
     #endregion
-
+    private Cinemachine.CinemachineImpulseSource MyInpulse;
     private void Start() {
         ComboTimerBar = GetComponentInChildren<Image>();
         ComboText = GetComponentInChildren<TMP_Text>();
@@ -44,6 +44,7 @@ public class ComboBox : BaseBehavior
         savedFillAmount = ComboTimerBar.fillAmount;
         savedText = ComboText.text;
         savedDeadTime = 0;
+        MyInpulse = GetComponent<Cinemachine.CinemachineImpulseSource>();
     }
 
     private void OnEnable() {
@@ -104,6 +105,7 @@ public class ComboBox : BaseBehavior
     {
         if(msg.Mid != (int)MESSAGE_TYPE.ADD_SCORE) return;
         ComboLossEnd();
+        MyInpulse.GenerateImpulse(new Vector3(Random.Range(.2f,.4f), Random.Range(-.4f,.4f), 0)); 
         //在规定时间内击杀敌人
         if(time.time <= lastComboTime + comboExpiredTime) //连击成功
         {

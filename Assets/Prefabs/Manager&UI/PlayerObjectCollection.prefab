@@ -98,6 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3917043902552800647}
   - component: {fileID: 8938998752558607539}
+  - component: {fileID: 1220489937644266358}
   m_Layer: 0
   m_Name: AimingTarget
   m_TagString: Untagged
@@ -172,6 +173,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!81 &1220489937644266358
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682597672325280082}
+  m_Enabled: 1
 --- !u!1 &3859424056212623819
 GameObject:
   m_ObjectHideFlags: 0

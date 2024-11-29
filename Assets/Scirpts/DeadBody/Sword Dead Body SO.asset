@@ -18,7 +18,4 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 358aa5d309dc16943b0f5711f335922e, type: 3}
   - type: 1
     spriteList:
-    - {fileID: 21300000, guid: 0794dbd4a2c67bc478fd413325ae079c, type: 3}
-    - {fileID: 21300000, guid: a9b7a8eb12d6482479892eebaab69da4, type: 3}
-    - {fileID: 21300000, guid: a0e516962eb9b5e43946d42c6619a005, type: 3}
-    - {fileID: 21300000, guid: 16cac5d66b8b2b04f949cb3c89854652, type: 3}
+    - {fileID: 587223154, guid: 105d22d165254144d89bd8e8d6a51f8d, type: 3}

@@ -3518,7 +3518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798877e67fa86f6429cadd143e50c362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableReplay: 1
+  enableReplay: 0
 --- !u!4 &711108084
 Transform:
   m_ObjectHideFlags: 0
@@ -7781,6 +7781,9 @@ MonoBehaviour:
   normalBgmAudioClip: {fileID: 8300000, guid: fdc68f71197e8bf45872dae8f3159fca, type: 3}
   mainTitleBgmAudioClip: {fileID: 8300000, guid: 6d9d5ddb4720f4f488d4af16347025b0, type: 3}
   timestopBgmAudioClip: {fileID: 8300000, guid: bd4f76af6ab46c143b2b23f2105c73d6, type: 3}
+  DIY_player: 0
+  normalBGMtimer: 0
+  timestopBGMtimer: 3
 --- !u!1 &2008547257
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class LaserAttack : AttackArea
     private int oriBulletNum;
     public int bulletNum;
     private float ShootInterval = 0.01f;
+    [SerializeField] private float voiceRadius;
 
     protected override void Awake()
     {
@@ -52,7 +53,7 @@ public class LaserAttack : AttackArea
         lineRenderer.SetPosition(1, hitPoint);
         edgeCollider2D.SetPoints(new List<Vector2>() { Vector3.zero, transform.InverseTransformPoint(hitPoint) });
         laser.SetActive(true);
-        SoundManager.PlayAudio("laser");
+        SoundManager.PlayAudio("laser",transform.position,voiceRadius);
     }
 
     public void CloseLaser()

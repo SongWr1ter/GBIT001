@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerWeapon : MagazineBaseShooting
 {
     private Animator animator;
+    public Transform shootTrans;
     public AnimatorOverrideController meleeController;
     private AnimatorOverrideController rangedController;
     private bool meleeAttack;
@@ -189,7 +190,7 @@ public class PlayerWeapon : MagazineBaseShooting
                 if (item.isRanged)
                 {
                     pickedThisFrame = true;
-
+                    item.PlayerWeapon = shootTrans;
                     if (rangedWeapon != null) // ????????????
                     {
                         rangedWeapon.SetActive(true);
@@ -271,6 +272,7 @@ public class PlayerWeapon : MagazineBaseShooting
                 rangedWeapon.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.Euler(0f, 0f, 0f));
             }
             weaponItem.SetAmmoAmount(Ammo);
+            weaponItem.PlayerWeapon = shootTrans;
         }
 
         if (meleeAttack)

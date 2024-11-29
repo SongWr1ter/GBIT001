@@ -62,7 +62,7 @@ public class DontChaseState : BaseState//替代ChaseState
     }
     public void OnEnter()
     {
-        paramater.animator.Play("idle");
+        paramater.animator.Play("Idle");
         paramater.chaseViewAngle /= 2.0f;
         paramater.maxChaseDistance += 5f;
     }
