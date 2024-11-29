@@ -162,6 +162,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 999073100}
     m_Modifications:
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: fsm
+      value: 
+      objectReference: {fileID: 1583499894}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: _hasShield
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: _hasGhostMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: _hasTimeCrack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: _hasFlashSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949512914945762325, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3949512914945762334, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: m_Name
       value: ActorEnemySword
@@ -172,11 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3949512914945762335, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.99
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3949512914945762335, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.9
+      value: -19.98
       objectReference: {fileID: 0}
     - target: {fileID: 3949512914945762335, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: m_LocalPosition.z
@@ -210,10 +234,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -87.12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7786253195293571586, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786253195293571586, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: isGenerating
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3197769242721119539, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3949512914945762334, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1583499894}
   m_SourcePrefab: {fileID: 100100000, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
 --- !u!1 &142366244
 GameObject:
@@ -8448,7 +8484,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 637138047627152928, guid: 8c5ac80fa70ad7d4d9862cd0fed4bbfc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.5
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 637138048259025815, guid: 8c5ac80fa70ad7d4d9862cd0fed4bbfc, type: 3}
       propertyPath: m_Name
@@ -79212,6 +79248,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetColor: {r: 0.1882353, g: 0.21568628, b: 0.28235295, a: 1}
+--- !u!1 &1583499893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3949512914945762334, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+  m_PrefabInstance: {fileID: 79841195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1583499894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583499893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9841b1db2d83794599e5dccfe254061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paramater:
+    MAX_HP: 2
+    HP: 0
+    speedCoff: 1
+    canBodyExplode: 1
+    BlockOffset: 2
+    partolSpeed: 5
+    chaseSpeed: 8
+    turnSpeed: 10
+    arriveDistance: 0.5
+    maxChaseDistance: 11
+    chaseViewAngle: 60
+    idleTime: 2
+    isDown: 0
+    downTime: 2
+    bodyCollinder: {fileID: 0}
+    reachedEndOfPath: 0
+    chaseIndex: 0
+    animator: {fileID: 0}
+    rigidbody: {fileID: 0}
+    seeker: {fileID: 0}
+    portalTarget: []
+    portalIndex: 0
+    target: {fileID: 0}
+    targetLayer:
+      serializedVersion: 2
+      m_Bits: 128
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 2112
+    isTargetInArea: 0
+    attackArea: {fileID: 0}
+    isDead: 0
+    deadBodyPrefab: {fileID: 3270843580065873301, guid: 639d3b3e87acbfc409b45ff5647087b4, type: 3}
+    deadBodySO: {fileID: 11400000, guid: 1d0b791867ad42246aa1da03ff4d28af, type: 2}
+    BloodPrefab: {fileID: 292720700197274783, guid: b5418d18645b84d43a885f87b58e7e36, type: 3}
+    stageID: 0
+    isFreeze: 0
+    reactTime: 0.8
+    isHeared: 0
+    heardPos: {x: 0, y: 0, z: 0}
+    lootPrefab: {fileID: 0}
+    questionMark: {fileID: 19465078452963167, guid: 71c7ae4b5469a4d43811147980cbc705, type: 3}
+    exclamationMark: {fileID: 185929588805492897, guid: 9b81c161b12fc0a4db32a26279d16268, type: 3}
+    targeted: 0
+    isSummoned: 0
+    showBlood: 1
+    canHeard: 1
+  curType: 0
 --- !u!1 &1640075343
 GameObject:
   m_ObjectHideFlags: 0
@@ -79610,7 +79712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxName: doorBroken
   maxHp: 3
-  currentHp: 0
   soundRadius: 0
   tilemapWithoutBreakable: {fileID: 1121923701}
   INFORMATION: "\u4E0D\u540C\u65B9\u5411\u4E0D\u80FD\u7528\u540C\u4E00\u4E2Atile"

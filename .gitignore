@@ -63,5 +63,10 @@ crashlytics-build.properties
 
 
 UserSettings/EditorUserSettings.asset
-
 UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+Assets/BKBShaderSupport/Assets/ShaderLearning/URPVersion/BKB 2D Renderer Data.asset
+Assets/BKBShaderSupport/Assets/ShaderLearning/URPVersion/Wind/Shader Graphs_Wind.mat
+Assets/Resources/DOTweenSettings.asset
+Assets/Scenes/Sample/Replay.renderTexture
+Assets/Scenes/TempleteScene.unity
+ProjectSettings/ShaderGraphSettings.asset
