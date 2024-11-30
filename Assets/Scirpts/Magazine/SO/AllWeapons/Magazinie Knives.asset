@@ -22,3 +22,4 @@ MonoBehaviour:
   shootVFX: {fileID: 0}
   shootSoundRadius: 0
   shootSFXname: knife
+  bulletShell: {fileID: 0}
