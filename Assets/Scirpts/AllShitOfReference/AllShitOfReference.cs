@@ -9,4 +9,5 @@ public class AllShitOfReference : ScriptableObject {
     public GameObject CirCleExplison;
     public GameObject CirCleExplisonCustom;
     public GameObject StarReference;
+    public GameObject DreamDeadBodyReference;
 }

@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3189599664053915846}
   - component: {fileID: -9219608393595920952}
   - component: {fileID: 4422818184950402105}
+  - component: {fileID: 8479671331799495029}
   m_Layer: 8
   m_Name: ActorEnemySubmachineGun
   m_TagString: Enemy
@@ -342,6 +343,18 @@ MonoBehaviour:
   shadowColor: {r: 0, g: 0.03529412, b: 1, a: 0.3137255}
   shadowMaterial: {fileID: 2100000, guid: 03b3eb5e80df798419665f114f929e53, type: 2}
   record_interval: 0.05
+--- !u!114 &8479671331799495029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667527998873599045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b61f02cf4903404dbc8cfb449a9c678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4667527999099806388
 GameObject:
   m_ObjectHideFlags: 0
