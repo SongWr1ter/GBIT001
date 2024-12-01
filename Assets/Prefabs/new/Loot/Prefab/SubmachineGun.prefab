@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -775768318, guid: 018cc076592fbdb4384891c87dd3e6f7, type: 3}
+  m_Sprite: {fileID: -2019513418, guid: 999a256b5daee0a4697ce48021a957eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   controller: {fileID: 22100000, guid: da06c71568b6674469348ef5f99e5e2b, type: 2}
   timer: 0
   highlightMat: {fileID: 2100000, guid: 54124482f48c0624c91ddd683d2cc0b6, type: 2}
+  PlayerWeapon: {fileID: 0}
 --- !u!58 &6685740833674041322
 CircleCollider2D:
   m_ObjectHideFlags: 0
