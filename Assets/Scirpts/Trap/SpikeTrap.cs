@@ -8,29 +8,37 @@ public class SpikeTrap : RoutineTrap
     private Collider2D[] colliders;
     [SerializeField]private Sprite spikeOnSprite;
     [SerializeField]private Sprite spikeOffSprite;
+    private SpriteRenderer[] spikeRenderers = new SpriteRenderer[4];
     // Start is called before the first frame update
     void Start()
     {
        colliders = GetComponentsInChildren<Collider2D>();
+       for (int i = 0; i < colliders.Length; i++)
+       {
+           spikeRenderers[i] = colliders[i].gameObject.GetComponent<SpriteRenderer>();
+       }
     }
 
 
 
     protected override void TrapOn()
     {
-        foreach (Collider2D c in colliders)
+        for (int i = 0; i < colliders.Length; i++)
         {
+            var c = colliders[i];
             c.enabled = true;
-            c.gameObject.GetComponent<SpriteRenderer>().sprite = spikeOnSprite;
+            spikeRenderers[i].sprite = spikeOnSprite;
+            SoundManager.PlayAudio("spike",transform.position,9f);
         }
     }
 
     protected override void TrapOff()
     {
-        foreach (Collider2D c in colliders)
+        for (int i = 0; i < colliders.Length; i++)
         {
+            var c = colliders[i];
             c.enabled = false;
-            c.gameObject.GetComponent<SpriteRenderer>().sprite = spikeOffSprite;
+            spikeRenderers[i].sprite = spikeOffSprite;
         }
     }
 }
