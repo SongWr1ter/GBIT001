@@ -943,6 +943,18 @@ PrefabInstance:
       propertyPath: _hasFlashSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3197769242721119539, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: paramater.canBodyExplode
       value: 1
@@ -6610,6 +6622,18 @@ PrefabInstance:
       objectReference: {fileID: 1230907492}
     - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
       propertyPath: _hasFlashSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8384775713294181479, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
+      propertyPath: outlineColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3949512914945762334, guid: 36df1d22db5f8ae41aaa858d8ff7f466, type: 3}
@@ -16044,6 +16068,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9219608393595920952, guid: 86080b07f057aab4687e059994b1668d, type: 3}
       propertyPath: _hasFlashSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9219608393595920952, guid: 86080b07f057aab4687e059994b1668d, type: 3}
+      propertyPath: outlineColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -9219608393595920952, guid: 86080b07f057aab4687e059994b1668d, type: 3}
+      propertyPath: outlineColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -9219608393595920952, guid: 86080b07f057aab4687e059994b1668d, type: 3}
+      propertyPath: outlineColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3189599664053915847, guid: 86080b07f057aab4687e059994b1668d, type: 3}
