@@ -11546,7 +11546,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2128069430719926407}
         m_TargetAssemblyTypeName: RetailerUI, Assembly-CSharp
-        m_MethodName: AddSpeed
+        m_MethodName: AddAmmo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11802,7 +11802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons: []
   speedAddAmount: 1
-  ammoAddAmount: 0.1
+  ammoAddAmount: 0.25
 --- !u!225 &7109786938337552234
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -13768,7 +13768,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2128069430719926407}
         m_TargetAssemblyTypeName: RetailerUI, Assembly-CSharp
-        m_MethodName: AddSpeed
+        m_MethodName: AddTimeEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

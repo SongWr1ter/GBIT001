@@ -450,7 +450,7 @@ MonoBehaviour:
   max_record_time: 11
   record_interval: 0.1
   isRecording: 0
-  shadowColor: {r: 0, g: 0.03529412, b: 1, a: 0.3137255}
+  shadowColor: {r: 0.961658, g: 1, b: 0, a: 0.3137255}
   windMaterial: {fileID: 2100000, guid: d7c7651f1b81209458dc4c91dc99f988, type: 2}
   windedPaticleGO: {fileID: 1835158562807925651, guid: 0bcf45fa86c37e44591f4135b8748ca2, type: 3}
 --- !u!114 &1394225755865228479

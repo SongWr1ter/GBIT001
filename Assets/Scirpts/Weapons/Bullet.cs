@@ -52,6 +52,7 @@ public class Bullet : BaseBehavior
                     GameObject g = Instantiate(TheShitOfReference.AllShitOfReference.PrefabReference1, hitinfo.point, Quaternion.identity);
                     ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
                     m.stopAction = ParticleSystemStopAction.Callback;
+                    SoundManager.PlayAudio("hitObstacle");
                     Destroy(gameObject);
                     return;
                 }
