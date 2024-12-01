@@ -51,8 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pop_interval: 2
   show_period: 1
-  spikeOnSprite: {fileID: -696107485, guid: 3b9cf5057ff88f14ebf96aa0fa5c13e6, type: 3}
-  spikeOffSprite: {fileID: -991035627, guid: 3b9cf5057ff88f14ebf96aa0fa5c13e6, type: 3}
+  spikeOnSprite: {fileID: 21300000, guid: 2b09676b4b698474986137132e955942, type: 3}
+  spikeOffSprite: {fileID: 21300000, guid: 97917eb6d9c28e84e949fd4f6e9b443f, type: 3}
 --- !u!114 &8687824046154030373
 MonoBehaviour:
   m_ObjectHideFlags: 0

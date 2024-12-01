@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087d171febb05be4e840afaca8df5dbf, type: 3}
   m_Name: Magazin Shotgun
   m_EditorClassIdentifier: 
-  rateOfFire: 2.5
+  rateOfFire: 1.5
   damage: 2
   bulletPrefab: {fileID: 6883037393498111236, guid: 39a54cba200df0b4b912b1f5de37821f, type: 3}
-  Ammo: 5
-  maxAmmo: 5
+  Ammo: 4
+  maxAmmo: 4
   weaponType: 1
   isAutomatic: 0
   shootVFX: {fileID: 0}
