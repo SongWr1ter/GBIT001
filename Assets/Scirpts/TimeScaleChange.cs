@@ -278,6 +278,7 @@ public class TimeScaleChange : MonoBehaviour
                 {
                     Mid = (int)MESSAGE_TYPE.FOCUS_ON
                 },MESSAGE_TYPE.FOCUS_ON);
+                SoundManager.PlayAudio("timeEnter");
             }
             else if(isFocusPowerOn && hasPlayed_FocusPowenOn)//off
             {
@@ -296,6 +297,7 @@ public class TimeScaleChange : MonoBehaviour
                 {
                     Mid = (int)MESSAGE_TYPE.FOCUS_OFF
                 },MESSAGE_TYPE.FOCUS_OFF);
+                SoundManager.PlayAudio("timeExit");
             }
         
     }

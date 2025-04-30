@@ -53,6 +53,7 @@ public class Bullet : BaseBehavior
                     ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
                     m.stopAction = ParticleSystemStopAction.Callback;
                     OnHitObstacle(hitinfo.point);
+                    SoundManager.PlayAudio("hitObstacle");
                     Destroy(gameObject);
                     return;
                 }
