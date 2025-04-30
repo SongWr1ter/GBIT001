@@ -1,0 +1,963 @@
+fileFormatVersion: 2
+guid: 41ea16d3ad8e269429f80b1d320f750d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 390
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a953f3c4615436b42936f500c1efe55a
+      internalID: -1030019534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 390
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd18c1d69f8e1194789c261a2da4d51a
+      internalID: 866239431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 390
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e9e2d81391185419e61418a6d1ff17
+      internalID: 2105424107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7fe85dee978c84db874f0b6ccac3e8
+      internalID: 487410150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f81361d8769554da1617705e12b960
+      internalID: 1344165085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c9a68bbf1adac4396c3b460c2bb288
+      internalID: 1529338857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07709d87d5d860b4da6e96d99fd10b52
+      internalID: 1869744173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae59ea084c5094f4a9647d51aefbda23
+      internalID: -1618485746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6501020b722a34ebba1d3a0889371f
+      internalID: -753453717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 312
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88570d2c0d293784e878b5753c582534
+      internalID: -595432291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03633fe1b4c08f4489a3825da9b551ba
+      internalID: -1279374175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12471faf582e8b741a6f85bc76077f62
+      internalID: -349268238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7ec1ee67e1e354fbf0f5738e8023a6
+      internalID: -352729000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e849304756a504baa66e86e719cefe
+      internalID: -886376157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e93ceabb11cdb04ba5ebf99464156b6
+      internalID: -1499996874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2196fe8eef0d67b4285085da4758a924
+      internalID: 23839930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 234
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe628c71a8e94543aec8d51701f8bdd
+      internalID: 182768219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8157c46f74bfb241829cfb38de3515b
+      internalID: 338566641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cf391018104c745a58f48c7802f859
+      internalID: 230354706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36b906640d971b4c8cc28a14c623d5e
+      internalID: 1761326559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577fa28f663df724ab5627ff03264306
+      internalID: -555946131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81447c13ec4d984daf6154797081baa
+      internalID: -407096519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6f7068b0698d14585a1639157c35d2
+      internalID: -117793991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_23
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 156
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e403e6081335d048a47b73e8d623550
+      internalID: -548311331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9af36a2d7d92f48bc6204917a92192
+      internalID: 1872381465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_25
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55a2523df043c74c8a78c3b59d17cd6
+      internalID: 2141001282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3f1cde05c3d3145af3b69d3dd8f785
+      internalID: 1982215344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_27
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4747ad949a1219747bd069365b0e0a33
+      internalID: -1481289485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d606c66980e207448b5b4d00c96e0ae
+      internalID: 914193958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_29
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405f5e584aa715e439317f0b9787a59b
+      internalID: -262998754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 78
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38138f23cf352e14db72f0be0429d230
+      internalID: 1450891258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7ad59dd7d8841478dc257107db97f7
+      internalID: 1724994437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_32
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c7f157b464c55429d26c9cbf8657d9
+      internalID: -809046735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3bc330dcd0f7c4ca334fd7dc9771f9
+      internalID: -2028531460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428c883ae1bec8545a58a09d9f48ba53
+      internalID: 831773378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747909f4628e5c5479557bc63e227bda
+      internalID: -1410881195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d53636450e8244395e922aae9a8d47
+      internalID: -527374907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol Walk_export_mixamocom_37
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc5e5c18be60ec48aef21ef0a573652
+      internalID: -81705091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Pistol Walk_export_mixamocom_0: -1030019534
+      Pistol Walk_export_mixamocom_1: 866239431
+      Pistol Walk_export_mixamocom_10: -1279374175
+      Pistol Walk_export_mixamocom_11: -349268238
+      Pistol Walk_export_mixamocom_12: -352729000
+      Pistol Walk_export_mixamocom_13: -886376157
+      Pistol Walk_export_mixamocom_14: -1499996874
+      Pistol Walk_export_mixamocom_15: 23839930
+      Pistol Walk_export_mixamocom_16: 182768219
+      Pistol Walk_export_mixamocom_17: 338566641
+      Pistol Walk_export_mixamocom_18: 230354706
+      Pistol Walk_export_mixamocom_19: 1761326559
+      Pistol Walk_export_mixamocom_2: 2105424107
+      Pistol Walk_export_mixamocom_20: -555946131
+      Pistol Walk_export_mixamocom_21: -407096519
+      Pistol Walk_export_mixamocom_22: -117793991
+      Pistol Walk_export_mixamocom_23: -548311331
+      Pistol Walk_export_mixamocom_24: 1872381465
+      Pistol Walk_export_mixamocom_25: 2141001282
+      Pistol Walk_export_mixamocom_26: 1982215344
+      Pistol Walk_export_mixamocom_27: -1481289485
+      Pistol Walk_export_mixamocom_28: 914193958
+      Pistol Walk_export_mixamocom_29: -262998754
+      Pistol Walk_export_mixamocom_3: 487410150
+      Pistol Walk_export_mixamocom_30: 1450891258
+      Pistol Walk_export_mixamocom_31: 1724994437
+      Pistol Walk_export_mixamocom_32: -809046735
+      Pistol Walk_export_mixamocom_33: -2028531460
+      Pistol Walk_export_mixamocom_34: 831773378
+      Pistol Walk_export_mixamocom_35: -1410881195
+      Pistol Walk_export_mixamocom_36: -527374907
+      Pistol Walk_export_mixamocom_37: -81705091
+      Pistol Walk_export_mixamocom_4: 1344165085
+      Pistol Walk_export_mixamocom_5: 1529338857
+      Pistol Walk_export_mixamocom_6: 1869744173
+      Pistol Walk_export_mixamocom_7: -1618485746
+      Pistol Walk_export_mixamocom_8: -753453717
+      Pistol Walk_export_mixamocom_9: -595432291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

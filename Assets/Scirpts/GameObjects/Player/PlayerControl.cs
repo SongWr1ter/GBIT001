@@ -113,15 +113,6 @@ public class PlayerControl : BaseBehavior
         {
             canPlayerHurt = !canPlayerHurt;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            GameObject go = GetComponent<PlayerWeapon>().rangedWeapon;
-            if (go != null)
-            {
-                go.GetComponent<WeaponItem>().GetData().Ammo += 100;
-                GetComponent<PlayerWeapon>().AmmoAmountChanged(100);
-            }
-        }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             canPlayerAlwaystopTime = !canPlayerAlwaystopTime;
@@ -208,9 +199,11 @@ public class PlayerControl : BaseBehavior
         Gizmos.DrawWireSphere(transform.position,excuteRadius);
     }
 
+    private int footstepAudioLength = 5;
     public void PlayFootAudio()
     {
-        SoundManager.PlayAudio("footstep1");
+        int i = Random.Range(0, footstepAudioLength);
+        SoundManager.PlayAudio($"highheels0{1+i}");
     }
 
     #region 动作,行动
@@ -273,7 +266,7 @@ public class PlayerControl : BaseBehavior
         gameObject.SetActive(false);
         
 
-        if (GetComponent<PlayerWeapon>().rangedWeapon && GetComponent<PlayerWeapon>().rangedWeapon.GetComponent<WeaponItem>().GetData() is MagazineLaserGun ls)
+        if (GetComponent<PlayerWeapon>() != null && GetComponent<PlayerWeapon>().rangedWeapon && GetComponent<PlayerWeapon>().rangedWeapon.GetComponent<WeaponItem>().GetData() is MagazineLaserGun ls)
         {
             Destroy(ls.laser);
         }
@@ -301,7 +294,10 @@ public class PlayerControl : BaseBehavior
         if(msg.Mid != (int)MESSAGE_TYPE.GAME_RESTART) return;
         transform.position = oriPos;
         isDead = false;
-        GetComponent<PlayerWeapon>().EndAttack(); // 保证玩家攻击碰撞体关闭
+        if (TryGetComponent<PlayerWeapon>(out PlayerWeapon weapon))
+        {
+            weapon.EndAttack(); // 保证玩家攻击碰撞体关闭
+        }
         //重置分数
         gameObject.SetActive(true);
     }

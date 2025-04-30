@@ -1,0 +1,1381 @@
+fileFormatVersion: 2
+guid: 717b268830cbd7a4b94f63f3e8ef63dd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6427e566f81cb45a68d8c0e26f3c2d
+      internalID: 1357819571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5747d6400dd4a3f4c98145a444cff0ac
+      internalID: -1187000135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3bccc40f9cd4e4bb7294380173b0e3
+      internalID: -1176490829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dec0a863e8fd45428a521f34cafd777
+      internalID: 1101298384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2b75ec7a4991f4282eb61db711c877
+      internalID: -460959711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb9a1b9bd9d0704b8bb1900436a181b
+      internalID: 505396974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf87fcc248564243a61e7caf70ae942
+      internalID: -1189097567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3723ba95f5053e64a96bf408ccfe67ee
+      internalID: -1179815290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c965ba3fe7f81e4fb7b459fb5bd39e3
+      internalID: -722514953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a06935f7fc1d2b4b9997ac4957a2924
+      internalID: 1958524661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd29a86a9377e7745a7e8a2845079b06
+      internalID: -787364880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8968b1e505373784ba234b66e738241e
+      internalID: -1881637895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2840e96be51f34288f04f6ab48ba6f
+      internalID: 1507591637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_13
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1617524c1e39ae94cabe420800374d42
+      internalID: -1495914000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_14
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36af98a4cf5f484d9bf8344ee702fc3
+      internalID: -47034950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 580
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e62b05c094463a4e9f4816849561591
+      internalID: 1045958279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd52194aab3276489e49fb02006ea64
+      internalID: 1218512027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fccccf0628cd84bae7367fcb6df382
+      internalID: -1422966493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad8e2e7bb6de534da4c3f697a0e7cd3
+      internalID: 909401112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d27c91954f6a49b2634f77a4f0c08
+      internalID: 272311543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f46a6edfb06814ab7ab7363316f02d
+      internalID: -1106002412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf9dcb60cca6145a7d87e0e28f4c28
+      internalID: -627789646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafa5f07ec20bd74fa546bf503e4f0d3
+      internalID: -1138458774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468259428cf771542bc049a3fa7929c4
+      internalID: 301926825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d081df255bc08449a74c675c3ceee6
+      internalID: -2354871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6cc89a1d1d6ca46ac5b4c14521fd06
+      internalID: -1327856755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d562a83dd56993b48a5d497d974757c8
+      internalID: -336194059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ff24f312c67044a34fbbcdd698c03
+      internalID: -385092494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176380f11284491488a3a985bc2b7962
+      internalID: 640494943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_29
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635f1c7263a995746abb924ad5714567
+      internalID: 757672107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_30
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7b8addd1041194e84e0e00ea0b13f7
+      internalID: -2059685020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_31
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7e2587dacf69141b2e4380505e79dd
+      internalID: 1783036982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71216c27be322ea4292f4186f7b3ac52
+      internalID: -1308708907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b17eeb4303e8f44ebf7f0a37a11c47a
+      internalID: -1703768462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a083eb76c343e594692f14afc219dd13
+      internalID: -1532281764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7931cdf3fad5efc43a963a98e21d8463
+      internalID: 2038722949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2471d6c5a34244095f2b069a5f4006
+      internalID: 57373786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e835492f0f50b48499c6a6ca26ca54c1
+      internalID: -1366118583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2604d06b090204eb3689af200493dd
+      internalID: 1326108934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_39
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d3291850083ea4c9bbbb057a19fc41
+      internalID: 2133821326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5856a6b06b343da4a91344fda98f00ff
+      internalID: -1890117049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_41
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0207961e33fb94a40b156878b52719e4
+      internalID: -416451520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_42
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0670e32d8b8e2d14583dfa9002e0375e
+      internalID: -1012533639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_43
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d5f6d871b14054e8bfc4335efbe18e
+      internalID: 2003609701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee2392ad57e474499e73f014149ebf7
+      internalID: 605638164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_45
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e4633357969124ebec37c42ae011b7
+      internalID: 288337949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_46
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dafc344b16f85646aacbb44e269a238
+      internalID: 1145615025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_47
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4e47bdbcf82aa469de951e730fe606
+      internalID: 531631338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc40faf461ba534fbbbf672edc6cc0c
+      internalID: -1354200106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_49
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402187e73d1fbf64dbfeec547b05f6de
+      internalID: 1672440697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_50
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166c373dbc70bf842b4f20b88d69fe78
+      internalID: 1138358260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_51
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684754677fa6c114ea21326b23b46c06
+      internalID: 840333053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e012a84585a5c04cb709c899cb868b7
+      internalID: -1400745227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_53
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ef7f840a3dde64fa01ad0f7735475c
+      internalID: 1069693872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de08d15d0bfce740aabf062633a99ee
+      internalID: 846943155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_55
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8686af65dcff9c64da5d26405157466f
+      internalID: -2137806871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catwalk Walk Forward_export_mixamocom_56
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 40
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dc2cfcafa5e24468a0e9c1643c4419
+      internalID: -57499460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Catwalk Walk Forward_export_mixamocom_0: 1357819571
+      Catwalk Walk Forward_export_mixamocom_1: -1187000135
+      Catwalk Walk Forward_export_mixamocom_10: -787364880
+      Catwalk Walk Forward_export_mixamocom_11: -1881637895
+      Catwalk Walk Forward_export_mixamocom_12: 1507591637
+      Catwalk Walk Forward_export_mixamocom_13: -1495914000
+      Catwalk Walk Forward_export_mixamocom_14: -47034950
+      Catwalk Walk Forward_export_mixamocom_15: 1045958279
+      Catwalk Walk Forward_export_mixamocom_16: 1218512027
+      Catwalk Walk Forward_export_mixamocom_17: -1422966493
+      Catwalk Walk Forward_export_mixamocom_18: 909401112
+      Catwalk Walk Forward_export_mixamocom_19: 272311543
+      Catwalk Walk Forward_export_mixamocom_2: -1176490829
+      Catwalk Walk Forward_export_mixamocom_20: -1106002412
+      Catwalk Walk Forward_export_mixamocom_21: -627789646
+      Catwalk Walk Forward_export_mixamocom_22: -1138458774
+      Catwalk Walk Forward_export_mixamocom_23: 301926825
+      Catwalk Walk Forward_export_mixamocom_24: -2354871
+      Catwalk Walk Forward_export_mixamocom_25: -1327856755
+      Catwalk Walk Forward_export_mixamocom_26: -336194059
+      Catwalk Walk Forward_export_mixamocom_27: -385092494
+      Catwalk Walk Forward_export_mixamocom_28: 640494943
+      Catwalk Walk Forward_export_mixamocom_29: 757672107
+      Catwalk Walk Forward_export_mixamocom_3: 1101298384
+      Catwalk Walk Forward_export_mixamocom_30: -2059685020
+      Catwalk Walk Forward_export_mixamocom_31: 1783036982
+      Catwalk Walk Forward_export_mixamocom_32: -1308708907
+      Catwalk Walk Forward_export_mixamocom_33: -1703768462
+      Catwalk Walk Forward_export_mixamocom_34: -1532281764
+      Catwalk Walk Forward_export_mixamocom_35: 2038722949
+      Catwalk Walk Forward_export_mixamocom_36: 57373786
+      Catwalk Walk Forward_export_mixamocom_37: -1366118583
+      Catwalk Walk Forward_export_mixamocom_38: 1326108934
+      Catwalk Walk Forward_export_mixamocom_39: 2133821326
+      Catwalk Walk Forward_export_mixamocom_4: -460959711
+      Catwalk Walk Forward_export_mixamocom_40: -1890117049
+      Catwalk Walk Forward_export_mixamocom_41: -416451520
+      Catwalk Walk Forward_export_mixamocom_42: -1012533639
+      Catwalk Walk Forward_export_mixamocom_43: 2003609701
+      Catwalk Walk Forward_export_mixamocom_44: 605638164
+      Catwalk Walk Forward_export_mixamocom_45: 288337949
+      Catwalk Walk Forward_export_mixamocom_46: 1145615025
+      Catwalk Walk Forward_export_mixamocom_47: 531631338
+      Catwalk Walk Forward_export_mixamocom_48: -1354200106
+      Catwalk Walk Forward_export_mixamocom_49: 1672440697
+      Catwalk Walk Forward_export_mixamocom_5: 505396974
+      Catwalk Walk Forward_export_mixamocom_50: 1138358260
+      Catwalk Walk Forward_export_mixamocom_51: 840333053
+      Catwalk Walk Forward_export_mixamocom_52: -1400745227
+      Catwalk Walk Forward_export_mixamocom_53: 1069693872
+      Catwalk Walk Forward_export_mixamocom_54: 846943155
+      Catwalk Walk Forward_export_mixamocom_55: -2137806871
+      Catwalk Walk Forward_export_mixamocom_56: -57499460
+      Catwalk Walk Forward_export_mixamocom_6: -1189097567
+      Catwalk Walk Forward_export_mixamocom_7: -1179815290
+      Catwalk Walk Forward_export_mixamocom_8: -722514953
+      Catwalk Walk Forward_export_mixamocom_9: 1958524661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

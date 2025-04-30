@@ -6,12 +6,12 @@ public class Bullet : BaseBehavior
 {
     public float speed = 10f;
     public float deadTime = 3f;protected float deadtime=0f;
-    [SerializeField]private bool canBounceBack;
-    [SerializeField]private LayerMask layer;
-    [SerializeField][Range(1,10)]private int iteration;
+    [SerializeField]protected bool canBounceBack;
+    [SerializeField]protected LayerMask layer;
+    [SerializeField][Range(1,10)]protected int iteration;
     protected bool canDamagePlayer=false;
-    private int _damage = 1;
-
+    protected int _damage = 1;
+    protected string _vfxName = "Normal";
     protected virtual void OnEnable() {
         MessageCenter.AddListener(OnGameRestart);
     }
@@ -39,7 +39,7 @@ public class Bullet : BaseBehavior
                 {
                     if (other.TryGetComponent(out Breakable breakableObject))
                     {
-                        GameObject g = Instantiate(TheShitOfReference.AllShitOfReference.PrefabReference1, hitinfo.point, Quaternion.identity);
+                        GameObject g = InstantiateVFX(_vfxName, hitinfo.point, Quaternion.identity);
                         ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
                         m.stopAction = ParticleSystemStopAction.Callback;
                         breakableObject.GetHurt(oriPos, hitinfo.point);
@@ -49,16 +49,17 @@ public class Bullet : BaseBehavior
                 }
                 if (other.CompareTag("Obstacle"))//子弹不会穿透 阻挡视野
                 {
-                    GameObject g = Instantiate(TheShitOfReference.AllShitOfReference.PrefabReference1, hitinfo.point, Quaternion.identity);
+                    GameObject g = InstantiateVFX(_vfxName, hitinfo.point, Quaternion.identity);
                     ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
                     m.stopAction = ParticleSystemStopAction.Callback;
+                    OnHitObstacle(hitinfo.point);
                     Destroy(gameObject);
                     return;
                 }
                 
                 if (other.CompareTag("Shield") && !canDamagePlayer)//子弹不会穿透 不阻挡视野
                 {
-                    GameObject g = Instantiate(TheShitOfReference.AllShitOfReference.PrefabReference1, hitinfo.point, Quaternion.identity);
+                    GameObject g = InstantiateVFX(_vfxName, hitinfo.point, Quaternion.identity);
                     ParticleSystem.MainModule m = g.GetComponent<ParticleSystem>().main;
                     m.stopAction = ParticleSystemStopAction.Callback;
                     if (other.TryGetComponent(out Breakable breakableObject))
@@ -122,4 +123,31 @@ public class Bullet : BaseBehavior
         _damage = damage;
     }
 
+    protected virtual void OnHitObstacle(Vector3 point)
+    {
+    }
+
+    public void SetBulletData(BulletData bulletData)
+    {
+        this._damage = bulletData.damage;
+        this.speed = bulletData.speed;
+        this.deadTime = bulletData.deadTime;
+        this.canBounceBack = bulletData.canBounceBack;
+        this.layer = bulletData.layer;
+        this.iteration = bulletData.iteration;
+        this._vfxName = bulletData.VfxName;
+    }
+
+    protected virtual GameObject InstantiateVFX(string vfxName,Vector3 position, Quaternion rotation)
+    {
+        GameObject vfx;
+        if (vfxName == "Heishiying")
+        {
+            vfx = TheShitOfReference.AllShitOfReference.HeishiyingHitVFX;
+        }else
+        {
+            vfx = TheShitOfReference.AllShitOfReference.PrefabReference1;
+        }
+        return Instantiate(vfx, position, rotation);
+    }
 }

@@ -18,3 +18,4 @@ MonoBehaviour:
   CirCleExplisonCustom: {fileID: 0}
   StarReference: {fileID: 8992385963463506660, guid: e601edc05be3bb6438a2e9e005eec922, type: 3}
   DreamDeadBodyReference: {fileID: 3270843580065873301, guid: 1b84aef822f7d864da105ef5c9b204e5, type: 3}
+  HeishiyingHitVFX: {fileID: 2810103453013686830, guid: 39b7dfea760c2e54fb5b4b26bc800481, type: 3}

@@ -10,4 +10,5 @@ public class AllShitOfReference : ScriptableObject {
     public GameObject CirCleExplisonCustom;
     public GameObject StarReference;
     public GameObject DreamDeadBodyReference;
+    public GameObject HeishiyingHitVFX;
 }

@@ -93,7 +93,10 @@ public class WeaponItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerWeapon>().pickableWeapon.Enqueue(gameObject);
+            if (collision.TryGetComponent(out PlayerWeapon weapon))
+            {
+                weapon.pickableWeapon.Enqueue(gameObject);
+            }
             GetComponent<SpriteRenderer>().material = highlightMat;
         }
     }
